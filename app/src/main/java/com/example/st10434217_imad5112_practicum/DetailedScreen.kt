@@ -32,7 +32,7 @@ class DetailedScreen : AppCompatActivity() {
         //building the strings from the arrays to be displayed in order
         val stringBuilder = StringBuilder()
         for (i in daysOfWeek.indices) {
-            stringBuilder.append("Day: ${daysOfWeek[i]}, Temperature: ${tempsOfWeek[i]} °C\n, Conditions: ${conditionsOfWeek[i]}")
+            stringBuilder.append(" ${daysOfWeek[i]}, Temperature: ${tempsOfWeek[i]} °C\n, Conditions: ${conditionsOfWeek[i]}")
         }
 
         //displaying the built string in the edit text
@@ -60,7 +60,7 @@ class DetailedScreen : AppCompatActivity() {
             AlertDialog.Builder(this)
                 .setTitle("Exit")
                 .setMessage("Are you sure you want to exit?")
-                //creating a yes buttom
+                //creating a yes button
                 .setPositiveButton("Yes") { dialog, which ->
                     finishAffinity()
                 }

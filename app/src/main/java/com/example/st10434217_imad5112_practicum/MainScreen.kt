@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Half
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
 
@@ -22,9 +23,10 @@ class MainScreen : AppCompatActivity() {
         //declarations
         val btnSecondExit = findViewById<Button>(R.id.btnSecondExit)
         val btnLastPage = findViewById<Button>(R.id.btnLastScreen)
-        val edtDaysOfWeek = findViewById<EditText>(R.id.edtDaysOfWeek)
+        val txtWeather = findViewById<TextView>(R.id.txtWeather)
         val edtAvgTemps = findViewById<EditText>(R.id.edtAvgTemps)
         val btnClear = findViewById<Button>(R.id.btnClear)
+        val edtDataReset = findViewById<EditText>(R.id.edtDataReset)
 
 
         //setting an on click listener to
@@ -68,15 +70,19 @@ class MainScreen : AppCompatActivity() {
             stringBuilder.append("Day: ${daysOfWeek[i]}, Temperature: ${tempsOfWeek[i]} °C\n")
         }
 
-        edtDaysOfWeek.setText(stringBuilder.toString())
+        txtWeather.setText(stringBuilder.toString())
 
         //setting the format of the avg temp to degrees celcius
         edtAvgTemps.setText(String.format("%.2f °C", avgWeeklyTemps))
 
 
-        btnClear.setOnClickListener {
-            // Clear the current temperatures array
-        }
+       // btnClear.setOnClickListener {
+         //   if (tempsOfWeek.size != edtDataReset.split("\n").size) {
+           //     errorMessage.text = "Please enter valid integer values only."
+             //   return@setOnClickListener
+
+        //}
+
 
     }
 

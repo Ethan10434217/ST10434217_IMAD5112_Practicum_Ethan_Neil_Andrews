@@ -22,14 +22,13 @@
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
-    <EditText
-        android:id="@+id/edtDaysOfWeek"
+    <TextView
+        android:id="@+id/txtWeather"
         android:layout_width="match_parent"
-        android:layout_height="143dp"
-        android:ems="10"
+        android:layout_height="149dp"
+        android:layout_gravity="center_horizontal"
         android:fontFamily="serif"
-        android:inputType="text"
-        android:text="Name"
+        android:text="TextView"
         android:textColor="#FFFFFF" />
 
     <Space
