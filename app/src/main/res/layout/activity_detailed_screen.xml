@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mountain2"
+    android:orientation="vertical"
+    tools:context=".DetailedScreen">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/txtWeatherDetails"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <TextView
+        android:id="@+id/txtMinimumTemp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textColor="#2196F3"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="67dp" />
+
+    <TextView
+        android:id="@+id/txtMaximumTemp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textColor="#2196F3"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="casual"
+        android:text="Return to The Main Page"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <Button
+        android:id="@+id/btnFinalExit"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="casual"
+        android:text="Exit Application"
+        android:textSize="20sp" />
+
+</LinearLayout>
